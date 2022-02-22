@@ -68,7 +68,7 @@ function pontok()
 
     var mobil="mobiltelefon hiány"
     //negyes
-    if(document.getElementById("answer") == "mobiltelefon hiány")
+    if(document.getElementById("answer") =="mobiltelefon hiány")
     {
         pont+=1;
     }
