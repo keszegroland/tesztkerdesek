@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="program.js"></script>
     <title>Kvízfeladat</title>
 </head>
 <body>
-    <div>
+    <div class="container my-3">
         <h1>Műveltségi tesztkérdések</h1>
 
         <div id="elso">
@@ -43,10 +45,24 @@
 
         <div id="otos">
             <p>5. Melyik kép ábrázolja a pádimentomot?</p>
-            <img src="ablak.jpg" id="kep">
-            <img src="erkely.jpg" id="kep">
-            <img src="padlo.jpg" id="kep">
-            <img src="színpad.jpg" id="kep">
+            <div class="row">
+                <div class="col-3">
+                    <img class="w-100" src="ablak.jpg" class="kep">
+                    <input type="radio"> Ablak
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="erkely.jfif" class="kep">
+                    <input type="radio"> Erkély
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="padlo.png" class="kep">
+                    <input type="radio"> Padló
+                </div>
+                <div class="col-3">
+                  <img class="w-100" src="szinpad.jpg" class="kep">
+                  <input type="radio"> Színpad
+              </div>
+        </div>
         </div>
         
     </div>
