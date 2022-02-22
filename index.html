@@ -14,27 +14,27 @@
 
         <div id="elso" class="p-5">
             <p>1. Mi a Twister?</p>
-            <input type='radio' name='tanc'> modern táncfajta<br>
-            <input type='radio' name='edesseg'> édesség<br>
-            <input type='radio' name='tarsas'> társasjáték(megoldas)
+            <input type='radio' name='tanc' id="tanc"> modern táncfajta<br>
+            <input type='radio' name='edesseg' id="edesseg"> édesség<br>
+            <input type='radio' name='tarsas' id="tarsas"> társasjáték
         </div>
 
         <div id="masodik" class="p-5">
             <p>2. Ki a holográfia feltalálója?</p>
             <select title="lehetoseg" id="lehetoseg">
                 <option disabled=disable selected>Lehetőségek</option>
-                <option>Gábor Dénes ((((((((((megoldas)))))))))</option>
-                <option>Lénárd Fülöp</option>
-                <option>Wigner Jenő</option>
+                <option id="gbmegold">Gábor Dénes ((((((((((megoldas)))))))))</option>
+                <option id="lenard">Lénárd Fülöp</option>
+                <option id="wigner">Wigner Jenő</option>
             </select>
         </div>
 
         <div id="harmadik" class="p-5">
             <p>3. Mi az arany vegyjele?</p>
-            <input type='checkbox'> H2o <input type='checkbox'> Pt<br>
-            <input type='checkbox'> Hg <input type='checkbox'> Au(helyes) <br>
-            <input type='checkbox'> H <input type='checkbox'> O <br>
-            <input type='checkbox'> Cu <input type='checkbox'> N
+            <input type='checkbox' id="h2o"> H2O <input type='checkbox' id="pt"> Pt<br>
+            <input type='checkbox' id="hg"> Hg <input type='checkbox' id="megoldas"> Au <br>
+            <input type='checkbox' id="h"> H <input type='checkbox' id="o"> O <br>
+            <input type='checkbox' id="cu"> Cu <input type='checkbox' id="n"> N
         </div>
 
         <div id="negyes" class="p-5">
@@ -48,19 +48,19 @@
             <div class="row">
                 <div class="col-3">
                     <img class="w-100 border border-danger rounded" src="ablak.jpg" alt="ablak">
-                    <input type="radio"> Ablak
+                    <input type="radio" id="ablak"> Ablak
                 </div>
                 <div class="col-3">
                     <img class="w-100 border border-danger rounded" src="erkely.jfif" alt="erkély" class="kep">
-                    <input type="radio"> Erkély
+                    <input type="radio" id="erkely"> Erkély
                 </div>
                 <div class="col-3">
                     <img class="w-100 border border-danger rounded" src="padlo.png" alt="padló" class="kep">
-                    <input type="radio"> Padló
+                    <input type="radio" id="padlo"> Padló
                 </div>
                 <div class="col-3">
                   <img class="w-100 border border-danger rounded" src="szinpad.jpg" alt="szinpad" class="kep">
-                  <input type="radio"> Színpad
+                  <input type="radio" id="szinpad"> Színpad
               </div>
         </div>
 
@@ -68,7 +68,7 @@
 
         <div class="row pt-5">
             <div class="col-md-12 text-right">
-                <button class="btn btn-success" type="button">A teszt kiértékelése!</button>
+                <button class="btn btn-success" onclick="pontok()" type="button">A teszt kiértékelése!</button>
             </div>
         </div>
 
