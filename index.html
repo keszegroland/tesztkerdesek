@@ -8,18 +8,18 @@
     <script src="program.js"></script>
     <title>Kvízfeladat</title>
 </head>
-<body>
-    <div class="container my-3">
-        <h1>Műveltségi tesztkérdések</h1>
+<body style="background-color: bisque;">
+    <div class="container my-3 border border-info rounded">
+        <h1 class="pt-3">Műveltségi tesztkérdések</h1>
 
-        <div id="elso">
+        <div id="elso" class="p-5">
             <p>1. Mi a Twister?</p>
             <input type='radio' name='tanc'> modern táncfajta<br>
             <input type='radio' name='edesseg'> édesség<br>
             <input type='radio' name='tarsas'> társasjáték(megoldas)
         </div>
 
-        <div id="masodik">
+        <div id="masodik" class="p-5">
             <p>2. Ki a holográfia feltalálója?</p>
             <select title="lehetoseg" id="lehetoseg">
                 <option disabled=disable selected>Lehetőségek</option>
@@ -29,7 +29,7 @@
             </select>
         </div>
 
-        <div id="harmadik">
+        <div id="harmadik" class="p-5">
             <p>3. Mi az arany vegyjele?</p>
             <input type='checkbox'> H2o <input type='checkbox'> Pt<br>
             <input type='checkbox'> Hg <input type='checkbox'> Au(helyes) <br>
@@ -37,29 +37,29 @@
             <input type='checkbox'> Cu <input type='checkbox'> N
         </div>
 
-        <div id="negyes">
+        <div id="negyes" class="p-5">
             <p>4. Mitől fél aki nomofóbiás? (a mobiltelefon hiányától)</p>
             <input type='text' id="answer">
             
         </div>
 
-        <div id="otos">
+        <div id="otos" class="p-5">
             <p>5. Melyik kép ábrázolja a pádimentomot?</p>
             <div class="row">
                 <div class="col-3">
-                    <img class="w-100" src="ablak.jpg" class="kep">
+                    <img class="w-100 border border-danger rounded" src="ablak.jpg" alt="ablak">
                     <input type="radio"> Ablak
                 </div>
                 <div class="col-3">
-                    <img class="w-100" src="erkely.jfif" class="kep">
+                    <img class="w-100 border border-danger rounded" src="erkely.jfif" alt="erkély" class="kep">
                     <input type="radio"> Erkély
                 </div>
                 <div class="col-3">
-                    <img class="w-100" src="padlo.png" class="kep">
+                    <img class="w-100 border border-danger rounded" src="padlo.png" alt="padló" class="kep">
                     <input type="radio"> Padló
                 </div>
                 <div class="col-3">
-                  <img class="w-100" src="szinpad.jpg" class="kep">
+                  <img class="w-100 border border-danger rounded" src="szinpad.jpg" alt="szinpad" class="kep">
                   <input type="radio"> Színpad
               </div>
         </div>
